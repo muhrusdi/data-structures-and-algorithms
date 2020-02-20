@@ -18,6 +18,10 @@ Stack.prototype.count = function() {
   return this._count;
 }
 
+Stack.prototype.isEmpty = function() {
+  return this._count === 0;
+}
+
 Stack.prototype.pop = function() {
   const value = this._storage[--this._count];
   delete this._storage[this._count];
@@ -36,6 +40,6 @@ const stack = new Stack();
 stack.push("test");
 stack.push("teste");
 stack.push("teste2");
-stack.peek()
-stack.pop()
-console.log(stack.peek())
+console.log(stack.count())
+console.log(stack.pop())
+console.log(stack.count())
