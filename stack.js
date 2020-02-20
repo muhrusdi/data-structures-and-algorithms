@@ -1,3 +1,5 @@
+// Stack adalah struktur data yang bersifat LIFO (first in first out)
+
 function Stack(capacity) {
   this._capacity = capacity || Infinity;
   this._storage = {};
@@ -35,4 +37,5 @@ stack.push("test");
 stack.push("teste");
 stack.push("teste2");
 stack.peek()
+stack.pop()
 console.log(stack.peek())
