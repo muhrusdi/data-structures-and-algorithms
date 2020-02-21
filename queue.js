@@ -19,6 +19,10 @@ Queue.prototype.enqueue = function(value) {
   return "Max chace already."
 }
 
+Queue.prototype.peek = function() {
+  return this._storage[this._head];
+}
+
 Queue.prototype.dequeue = function() {
   const element = this._storage[this._head];
   delete this._storage[this._head];
